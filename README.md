@@ -14,50 +14,50 @@ I didn't understand how diffusion models actually work. I could use them, but I 
 
 ## Experiment Table
 
-| # | Topic | Hypothesis | Result | Key Learning |
-|---|-------|-----------|--------|-------------|
-| 01 | Multi-Document RAG | Chunking strategy affects retrieval quality | True | 512 tokens with 50 overlap works best |
-| 02 | CLIP Alignment | Text-image alignment needs contrastive loss | True | Negative samples matter more than positive |
-| 03 | Agentic RAG | Router improves retrieval relevance | True | Metadata filtering beats semantic search |
-| 04 | RAG Pipeline | Context window size affects answer quality | Partially | Diminishing returns beyond 4K tokens |
-| 05 | Synthetic Medical GANs | GANs can generate realistic medical records | True | Mode collapse is the real problem |
-| 06 | RAG From Scratch | Custom retrieval beats LangChain default | True | Understanding the code matters |
-| 07 | Data Augmentation | LLMs can augment training data effectively | True | Quality filtering is critical |
-| 08 | Data Cleaning | Pandas pipeline beats manual cleaning | True | Reproducibility is the real benefit |
-| 09 | Data Preprocessing | Python preprocessing is slow | True | Rust gives 10x speedup |
-| 10 | Docker ML | Containerization improves reproducibility | True | Multi-stage builds save 50% size |
-| 11 | Diffusion Images | DDPM can generate coherent images | True | 1000 steps is overkill, 500 suffices |
-| 12 | Document Analysis | LLMs can extract structured info from docs | True | Prompt engineering matters most |
-| 13 | Fine-tuning | LoRA is efficient for domain adaptation | True | Rank 8 outperforms rank 4 |
-| 14 | Geospatial Clustering | DBSCAN works for location data | True | Epsilon parameter is dataset-dependent |
-| 15 | Hybrid ML | Ensemble beats single model | True | Diversity matters more than size |
-| 16 | MLOps Airflow | Airflow simplifies pipeline management | True | DAG design is the hard part |
-| 17 | Time Series | Multivariate forecasting beats univariate | True | Feature selection is critical |
-| 18 | News Collection | Web scraping is fragile | True | Respect robots.txt, add delays |
-| 19 | Synthetic Data | GANs can generate tabular data | True | Privacy implications are real |
-| 20 | Text Classification | Simple models often beat complex ones | True | TF-IDF + SVM is surprisingly good |
-| 21 | Summarization | LLMs summarize better than extractive methods | True | But they hallucinate |
-| 22 | Automated Cleaning | Rust preprocessing is worth the effort | True | 10x speedup for large datasets |
-| 23 | Topic Modeling | BERTopic beats LDA | True | But needs more compute |
-| 24 | Multi-Agent | Agents can collaborate effectively | True | Coordination is the hard part |
-| 25 | Research Agent | Agents can automate research | Partially | Hallucination is a real problem |
-| 26 | Game AI | DQN can learn to play games | True | Reward shaping is critical |
-| 27 | Real-Time AI | RAG can work in real-time | True | Latency is the bottleneck |
-| 28 | Diffusion From Scratch | U-Net + noise scheduler works | True | Convergence takes patience |
-| 29 | CrewAI Agents | Multi-agent frameworks simplify development | True | But abstraction leaks |
-| 30 | LLM From Scratch | Transformer decoder can be trained | True | Data quality matters more than size |
+| Topic | Hypothesis | Result | Key Learning |
+|-------|-----------|--------|-------------|
+| Multi-Document RAG | Chunking strategy affects retrieval quality | True | 512 tokens with 50 overlap works best |
+| CLIP Alignment | Text-image alignment needs contrastive loss | True | Negative samples matter more than positive |
+| Agentic RAG | Router improves retrieval relevance | True | Metadata filtering beats semantic search |
+| RAG Pipeline | Context window size affects answer quality | Partially | Diminishing returns beyond 4K tokens |
+| Synthetic Medical GANs | GANs can generate realistic medical records | True | Mode collapse is the real problem |
+| RAG From Scratch | Custom retrieval beats LangChain default | True | Understanding the code matters |
+| Data Augmentation | LLMs can augment training data effectively | True | Quality filtering is critical |
+| Data Cleaning | Pandas pipeline beats manual cleaning | True | Reproducibility is the real benefit |
+| Data Preprocessing | Python preprocessing is slow | True | Rust gives 10x speedup |
+| Docker ML | Containerization improves reproducibility | True | Multi-stage builds save 50% size |
+| Diffusion Images | DDPM can generate coherent images | True | 1000 steps is overkill, 500 suffices |
+| Document Analysis | LLMs can extract structured info from docs | True | Prompt engineering matters most |
+| Fine-tuning | LoRA is efficient for domain adaptation | True | Rank 8 outperforms rank 4 |
+| Geospatial Clustering | DBSCAN works for location data | True | Epsilon parameter is dataset-dependent |
+| Hybrid ML | Ensemble beats single model | True | Diversity matters more than size |
+| MLOps Airflow | Airflow simplifies pipeline management | True | DAG design is the hard part |
+| Time Series | Multivariate forecasting beats univariate | True | Feature selection is critical |
+| News Collection | Web scraping is fragile | True | Respect robots.txt, add delays |
+| Synthetic Data | GANs can generate tabular data | True | Privacy implications are real |
+| Text Classification | Simple models often beat complex ones | True | TF-IDF + SVM is surprisingly good |
+| Summarization | LLMs summarize better than extractive methods | True | But they hallucinate |
+| Automated Cleaning | Rust preprocessing is worth the effort | True | 10x speedup for large datasets |
+| Topic Modeling | BERTopic beats LDA | True | But needs more compute |
+| Multi-Agent | Agents can collaborate effectively | True | Coordination is the hard part |
+| Research Agent | Agents can automate research | Partially | Hallucination is a real problem |
+| Game AI | DQN can learn to play games | True | Reward shaping is critical |
+| Real-Time AI | RAG can work in real-time | True | Latency is the bottleneck |
+| Diffusion From Scratch | U-Net + noise scheduler works | True | Convergence takes patience |
+| CrewAI Agents | Multi-agent frameworks simplify development | True | But abstraction leaks |
+| LLM From Scratch | Transformer decoder can be trained | True | Data quality matters more than size |
 
 ---
 
 ## Projects Worth Reading
 
-| # | Project | Why It Stands Out |
-|---|---------|-------------------|
-| 06 | RAG From Scratch | Custom retrieval engine without LangChain — proves I understand vector search |
-| 16 | MLOps with Airflow | Full DAG with model registry, not just a single script |
-| 22 | Automated Data Cleaning (Rust) | Deliberate language choice for performance-critical preprocessing |
-| 26 | LLM From Scratch | Transformer decoder trained on custom corpus, not Shakespeare |
-| 28 | Diffusion Model from Scratch | U-Net + noise scheduler, converged to generate coherent images |
+| Project | Why It Stands Out |
+|---------|-------------------|
+| RAG From Scratch | Custom retrieval engine without LangChain — proves I understand vector search |
+| MLOps with Airflow | Full DAG with model registry, not just a single script |
+| Automated Data Cleaning (Rust) | Deliberate language choice for performance-critical preprocessing |
+| LLM From Scratch | Transformer decoder trained on custom corpus, not Shakespeare |
+| Diffusion Model from Scratch | U-Net + noise scheduler, converged to generate coherent images |
 
 ---
 
@@ -109,7 +109,7 @@ git clone https://github.com/neonite-rc/ml-engineering-lab.git
 cd ml-engineering-lab
 
 # Run a specific experiment
-cd 06_Build_Your_First_RAG_System_From_Scratch
+cd Build_Your_First_RAG_System_From_Scratch
 pip install -r requirements.txt
 python rag_from_scratch.py
 ```
